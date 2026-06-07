@@ -691,6 +691,77 @@
       box-shadow: 0.25rem 0.25rem 0 var(--black);
     }
 
+    .leo-card {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      border: var(--border);
+      border-radius: 2.25rem;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      background: var(--white);
+    }
+
+    .leo-img {
+      height: 100%;
+      min-height: 28rem;
+      object-fit: cover;
+      border-right: var(--border);
+    }
+
+    .leo-info {
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.25rem;
+      background: var(--purple);
+      color: var(--white);
+    }
+
+    .leo-badge {
+      display: inline-flex;
+      width: fit-content;
+      background: var(--yellow);
+      color: var(--black);
+      border: var(--border);
+      border-radius: 999px;
+      padding: 0.5rem 1rem;
+      font-weight: 900;
+      box-shadow: 0.25rem 0.25rem 0 var(--black);
+    }
+
+    .leo-info h3 {
+      font-family: "Archivo Black", sans-serif;
+      text-transform: uppercase;
+      font-size: clamp(3rem, 6vw, 5.5rem);
+      line-height: 0.9;
+      letter-spacing: -0.125rem;
+    }
+
+    .leo-info p {
+      font-weight: 700;
+      line-height: 1.7;
+      opacity: 0.92;
+    }
+
+    .leo-facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.25rem;
+    }
+
+    .leo-fact {
+      background: var(--white);
+      color: var(--black);
+      border: 0.1875rem solid var(--black);
+      border-radius: 999px;
+      padding: 0.5rem 1rem;
+      font-weight: 900;
+      font-size: 0.9rem;
+      box-shadow: 0.25rem 0.25rem 0 var(--black);
+    }
+
     .cta {
       padding: 5.625rem 0;
     }
@@ -817,6 +888,16 @@
         border-right: none;
         border-bottom: var(--border);
         height: 20rem;
+      }
+
+      .leo-card {
+        grid-template-columns: 1fr;
+      }
+
+      .leo-img {
+        min-height: 20rem;
+        border-right: none;
+        border-bottom: var(--border);
       }
     }
 
