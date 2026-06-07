@@ -16,11 +16,11 @@
     }
 
     html {
-      font-size: 14px;
+      font-size: 16px;
       scroll-behavior: smooth;
     }
 
-    @media (min-width: 560px)  { html { font-size: 15px; } }
+    
     @media (min-width: 980px)  { html { font-size: 16px; } }
     @media (min-width: 1280px) { html { font-size: 17px; } }
     @media (min-width: 1440px) { html { font-size: 18px; } }
@@ -520,7 +520,7 @@
 
     .project-grid {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
+      grid-template-columns: 1fr;
       gap: 1.5rem;
     }
 
@@ -535,8 +535,8 @@
 
     .project-main {
       display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      min-height: 26.25rem;
+      grid-template-columns: 1fr 1fr;
+      min-height: 28rem;
     }
 
     .project-main img {
@@ -546,7 +546,7 @@
     }
 
     .project-content {
-      padding: 2rem;
+      padding: 2.5rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -555,7 +555,7 @@
     .project-content h3 {
       font-family: "Archivo Black", sans-serif;
       text-transform: uppercase;
-      font-size: clamp(2rem, 4vw, 3.6rem);
+      font-size: clamp(2rem, 3.5vw, 3.6rem);
       line-height: 0.95;
       margin-bottom: 1.125rem;
     }
@@ -567,7 +567,7 @@
     }
 
     .project-side {
-      padding: 1.75rem;
+      padding: 2rem 2.5rem;
       background: var(--yellow);
     }
 
@@ -575,11 +575,12 @@
       font-family: "Archivo Black", sans-serif;
       text-transform: uppercase;
       font-size: 2rem;
-      margin-bottom: 1.125rem;
+      margin-bottom: 1.25rem;
     }
 
     .mini-list {
       display: grid;
+      grid-template-columns: repeat(5, 1fr);
       gap: 0.875rem;
     }
 
