@@ -818,13 +818,81 @@
       padding: 0.75rem;
     }
 
-    footer {
-      background: var(--black);
-      color: var(--white);
+    .footer-vid-wrap {
+      position: relative;
+      overflow: hidden;
+      min-height: 26rem;
       border-top: var(--border);
-      padding: 1.75rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-vid {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .footer-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.72);
+      z-index: 1;
+    }
+
+    .footer-inner {
+      position: relative;
+      z-index: 2;
+      color: var(--white);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      gap: 2rem;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    .footer-big {
+      display: block;
+      font-family: "Archivo Black", sans-serif;
+      font-size: clamp(3.5rem, 7vw, 7rem);
+      line-height: 1;
+      text-transform: uppercase;
+      color: var(--yellow);
+    }
+
+    .footer-sub {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 700;
+      opacity: 0.7;
+      margin-top: 0.5rem;
+      letter-spacing: 0.04em;
+    }
+
+    .footer-mid {
       text-align: center;
-      font-weight: 900;
+      border-left: 0.1875rem solid rgba(255,255,255,0.2);
+      border-right: 0.1875rem solid rgba(255,255,255,0.2);
+      padding: 0 2rem;
+    }
+
+    .footer-mid p {
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 2;
+      opacity: 0.9;
+    }
+
+    .footer-copy {
+      text-align: right;
+      font-size: 0.85rem;
+      font-weight: 700;
+      opacity: 0.55;
+      letter-spacing: 0.03em;
     }
 
     @media (max-width: 980px) {
@@ -836,8 +904,21 @@
       .section-head,
       .project-grid,
       .project-main,
-      .cta-card {
+      .cta-card,
+      .footer-inner {
         grid-template-columns: 1fr;
+      }
+
+      .footer-mid {
+        border-left: none;
+        border-right: none;
+        border-top: 0.1875rem solid rgba(255,255,255,0.2);
+        border-bottom: 0.1875rem solid rgba(255,255,255,0.2);
+        padding: 1.5rem 0;
+      }
+
+      .footer-copy {
+        text-align: left;
       }
 
       .hero-card {
