@@ -296,9 +296,15 @@
     .marquee-track {
       display: inline-flex;
       gap: 2.125rem;
+      animation: marquee 20s linear infinite;
       font-family: "Archivo Black", sans-serif;
       text-transform: uppercase;
       font-size: 1.35rem;
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
     }
 
     .marquee-track span {
