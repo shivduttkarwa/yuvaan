@@ -15,18 +15,17 @@
       --radius: 1.5rem;
     }
 
-    /* ── Responsive rem base ── */
     html {
-      font-size: 16px;   /* desktop  →  1rem = 16px */
+      font-size: 16px;
       scroll-behavior: smooth;
     }
 
     @media (max-width: 980px) {
-      html { font-size: 15px; }  /* tablet   →  1rem = 15px */
+      html { font-size: 15px; }
     }
 
     @media (max-width: 560px) {
-      html { font-size: 14px; }  /* mobile   →  1rem = 14px */
+      html { font-size: 14px; }
     }
 
     * {
@@ -60,8 +59,6 @@
       width: min(73.75rem, 92%);
       margin: auto;
     }
-
-    /* NAVBAR */
 
     .nav-wrap {
       padding: 1.5rem 0;
@@ -144,8 +141,6 @@
       transform: translate(-0.125rem, -0.125rem);
       box-shadow: 0.4375rem 0.4375rem 0 var(--orange);
     }
-
-    /* HERO */
 
     .hero {
       padding: 4.5rem 0 3.625rem;
@@ -289,8 +284,6 @@
       animation: spinSlow 9s linear infinite;
     }
 
-    /* MARQUEE */
-
     .marquee {
       border-top: var(--border);
       border-bottom: var(--border);
@@ -313,8 +306,6 @@
     .marquee-track span {
       color: var(--yellow);
     }
-
-    /* SECTION GENERAL */
 
     .section {
       padding: 5.75rem 0;
@@ -357,8 +348,6 @@
       line-height: 1.7;
       box-shadow: var(--shadow);
     }
-
-    /* ABOUT */
 
     .about-grid {
       display: grid;
@@ -409,8 +398,6 @@
       font-size: 3rem;
       margin-bottom: 1rem;
     }
-
-    /* INTEREST CARDS */
 
     .interest-grid {
       display: grid;
@@ -491,8 +478,6 @@
       font-weight: 900;
     }
 
-    /* QUEST MAP */
-
     .quest-board {
       background: var(--black);
       color: var(--white);
@@ -547,8 +532,6 @@
       line-height: 1.55;
       font-size: 0.95rem;
     }
-
-    /* PROJECTS */
 
     .project-grid {
       display: grid;
@@ -627,8 +610,6 @@
       box-shadow: 0.25rem 0.25rem 0 var(--black);
     }
 
-    /* SKILLS */
-
     .skill-wall {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
@@ -663,8 +644,6 @@
     .skill:hover {
       transform: translateY(-0.5rem) rotate(-2deg);
     }
-
-    /* GALLERY */
 
     .gallery-grid {
       display: grid;
@@ -707,8 +686,6 @@
       font-weight: 900;
       box-shadow: 0.25rem 0.25rem 0 var(--black);
     }
-
-    /* CTA */
 
     .cta {
       padding: 5.625rem 0;
@@ -794,8 +771,6 @@
       font-weight: 900;
     }
 
-    /* ANIMATIONS */
-
     .reveal {
       opacity: 0;
       transform: translateY(1.875rem);
@@ -816,8 +791,6 @@
       from { transform: rotate(0deg); }
       to   { transform: rotate(360deg); }
     }
-
-    /* RESPONSIVE */
 
     @media (max-width: 980px) {
       .nav-links {
