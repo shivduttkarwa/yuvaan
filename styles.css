@@ -159,7 +159,7 @@
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.4fr 0.6fr;
+      grid-template-columns: 1.28fr 0.72fr;
       gap: 1.5rem;
       align-items: center;
     }
@@ -263,38 +263,6 @@
       filter: saturate(1.12) contrast(1.05);
     }
 
-    .hero-label {
-      position: absolute;
-      left: -1.25rem;
-      top: 2rem;
-      background: var(--blue);
-      color: var(--white);
-      border: var(--border);
-      border-radius: 1.125rem;
-      padding: 0.5rem 0.875rem;
-      box-shadow: 0.375rem 0.375rem 0 var(--black);
-      font-weight: 900;
-      font-size: 0.875rem;
-      transform: rotate(-8deg);
-    }
-
-    .hero-sticker {
-      position: absolute;
-      right: -1.25rem;
-      bottom: 2rem;
-      width: 7rem;
-      height: 7rem;
-      background: var(--yellow);
-      border: var(--border);
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      font-family: "Archivo Black", sans-serif;
-      font-size: 0.875rem;
-      line-height: 1.05;
-      box-shadow: var(--shadow);
-    }
 
     .marquee {
       border-top: var(--border);
@@ -662,47 +630,6 @@
       transform: translateY(-0.5rem) rotate(-2deg);
     }
 
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr 1fr;
-      gap: 1.375rem;
-    }
-
-    .gallery-card {
-      background: var(--white);
-      border: var(--border);
-      border-radius: 1.75rem;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      position: relative;
-    }
-
-    .gallery-card img {
-      height: 20rem;
-      object-fit: cover;
-      border-bottom: var(--border);
-    }
-
-    .gallery-card.tall img {
-      height: 26.875rem;
-    }
-
-    .gallery-card p {
-      padding: 1.125rem;
-      font-weight: 900;
-    }
-
-    .gallery-card .label {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      background: var(--yellow);
-      border: 0.1875rem solid var(--black);
-      border-radius: 999px;
-      padding: 0.5rem 0.75rem;
-      font-weight: 900;
-      box-shadow: 0.25rem 0.25rem 0 var(--black);
-    }
 
     .hobby-grid {
       display: grid;
@@ -945,9 +872,6 @@
         grid-template-columns: repeat(3, 1fr);
       }
 
-      .gallery-grid {
-        grid-template-columns: 1fr;
-      }
 
       .project-main img {
         border-right: none;
@@ -976,12 +900,7 @@
         grid-template-columns: 1fr;
       }
 
-      .hero-label,
-      .hero-sticker {
-        display: none;
-      }
-
-      .hero-image {
+.hero-image {
         height: 21.25rem;
       }
 
