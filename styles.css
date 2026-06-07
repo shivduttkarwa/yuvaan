@@ -691,6 +691,57 @@
       box-shadow: 0.25rem 0.25rem 0 var(--black);
     }
 
+    .hobby-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .hobby-card {
+      border: var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      transition: 0.2s ease;
+    }
+
+    .hobby-card:hover {
+      transform: translate(-0.25rem, -0.25rem);
+      box-shadow: 0.75rem 0.75rem 0 var(--black);
+    }
+
+    .hobby-card:nth-child(1) {
+      background: var(--orange);
+      color: var(--white);
+    }
+
+    .hobby-card:nth-child(2) {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    .hobby-card:nth-child(3) {
+      background: var(--yellow);
+      color: var(--black);
+    }
+
+    .hobby-emoji {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hobby-card h3 {
+      font-family: "Archivo Black", sans-serif;
+      text-transform: uppercase;
+      font-size: 1.55rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .hobby-card p {
+      font-weight: 700;
+      line-height: 1.65;
+    }
+
     .leo-card {
       display: grid;
       grid-template-columns: 1fr 1.2fr;
@@ -868,7 +919,8 @@
       }
 
       .interest-grid,
-      .about-grid {
+      .about-grid,
+      .hobby-grid {
         grid-template-columns: 1fr;
       }
 
